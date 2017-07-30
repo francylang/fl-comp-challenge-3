@@ -11,9 +11,9 @@ body {
   font-size: 16px;
 }
 
+/*ASIDE*/
 .aside-container {
   background-color: #354052;
-
 }
 
 .top-aside {
@@ -37,6 +37,9 @@ body {
 }
 
 .profile-pic {
+  background-image: url(assets/leslie.jpg);
+  background-position: center;
+  background-size: contain;
   height: 100px;
   width: 100px;
   border-radius: 100%
@@ -74,83 +77,63 @@ li {
 #home {
   background-image: url('assets/home.svg');
 }
-
 #home:hover {
   background-image: url('assets/icon.svg');
 }
-
 #jobs {
   background-image: url('assets/briefcase.svg');
 }
-
 #jobs:hover {
   background-image: url('assets/briefcase (1).svg');
 }
-
 #resume {
   background-image: url('assets/resume.svg');
 }
-
 #resume:hover {
   background-image: url('assets/resume (1).svg');
 }
-
 #tasks {
   background-image: url('assets/list.svg');
 }
-
 #tasks:hover {
   background-image: url('assets/list (1).svg');
 }
-
 #calendar {
   background-image: url('assets/calendar.svg');
 }
-
 #calendar:hover {
   background-image: url('assets/calendar (1).svg');
 }
-
 #users {
   background-image: url('assets/users.svg');
 }
-
 #users:hover {
   background-image: url('assets/users (1).svg');
 }
-
 #locations {
   background-image: url('assets/facebook-placeholder-for-locate-places-on-maps.svg');
 }
-
 #locations:hover {
   background-image: url('assets/placeholder (1).svg');
 }
-
 #workflows {
   background-image: url('assets/network.svg');
 }
-
 #workflows:hover {
   background-image: url('assets/network (1).svg');
 }
-
 #job-boards {
   background-image: url('assets/newspaper.svg');
 }
-
 #job-boards:hover {
   background-image: url('assets/newspaper (1).svg');
 }
-
 #social {
   background-image: url('assets/share (1).svg');
 }
-
 #social:hover {
   background-image: url('assets/share-symbol.svg');
 }
-
 
 .aside-categories {
   display: flex;
@@ -166,44 +149,33 @@ li {
 #yellow-box {
   background-color: #FBE303;
 }
-
 #blue-box {
   background-color: #2AB0FB;
 }
-
 #red-box {
   background-color: #EC1B62;
 }
-
 #green-box {
   background-color: #00AA88;
 }
-
 .checkbox {
 	-webkit-appearance: none;
-  display: block;
-  position: relative;
-  margin: 10px;
+  display: inline-block;
 	padding: 8px;
-	border-radius: 1px;
-  cursor: pointer;
-  outline: none;
+	border-radius: 2px;
 }
 .checkbox:checked:after {
-  position: absolute;
-  top: 0px;
-  left: 2px;
 	content: '\2714';
   color: #000000;
 	font-size: 14px;
   outline: none;
 }
-
 .checkbox-label {
   color: #939EB0;
   font-size: 14px;
 }
 
+/*SEARCH*/
 .header-box {
   height: 150px;
   display: flex;
@@ -211,11 +183,9 @@ li {
   flex-wrap: wrap;
 }
 
-
 main {
   background-color: #EDF2F6;
-
-  }
+}
 
 .main-container {
   display: flex;
@@ -274,10 +244,9 @@ main {
   outline: none;
 }
 
-#short-search-bar {
+/*#short-search-bar {
   display: none;
-}
-
+}*/
 
 .right-search-icons {
   height: 100%;
@@ -288,20 +257,16 @@ main {
 #user {
   background-image: url('assets/user-male-black-shape-with-plus-sign.svg');
 }
-
 #calendar1 {
   background-image: url('assets/calendar-and-clock.svg');
 }
-
 #dots {
   background-image: url('assets/dot-matrix.svg');
 }
-
-#expand{
+/*#expand{
   display: none;
   background-image: url('assets/dot-matrix.svg');
-}
-
+}*/
 #user,
 #calendar1,
 #dots,
@@ -310,14 +275,13 @@ main {
   background-position: 20px;
   background-size: 50%;
 }
-
 #user:hover,
 #calendar1:hover,
 #dots:hover {
   background-color: #16A0F5;
-  cursor: pointer;
 }
 
+/*HEADER*/
 .middle-header-box {
   height: 150px;
   display: flex;
@@ -364,19 +328,19 @@ header p {
 #open {
   height: 35px;
   width: 80px;
-  margin: 10px;
-  padding-top: 5px;
-  padding-left: 20px;
   border: 2px solid #DEE3E9;
   border-radius: 17px;
   background-image: url('assets/circle.svg');
-  background-color: inherit;
+  background-color: #FFF;
   background-position: 10px;
   background-repeat: no-repeat;
   background-size: 10px;
   color: #6C6D72;
   font-size: 12px;
   text-align: center;
+  margin: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 #ribbon,
 #edit,
@@ -385,11 +349,10 @@ header p {
   padding: 15px;
   border: 2px solid #DEE3E9;
   border-radius: 100%;
-  background-color: inherit;
-  background-position: 50%;
+  background-color: #FFF;
+  background-position: 7.5px;
   background-repeat: no-repeat;
   background-size: 15px;
-  cursor: pointer;
 }
 
 #ribbon {
@@ -405,13 +368,20 @@ header p {
 }
 
 .lower-header-tabs {
+  margin-bottom: 15px;
+
 }
 
 .tab-link {
-  margin-left: 25px;
+  margin-left: 30px;
   color: #C2C2C2;
   font-size: 16px;
   text-decoration: none;
+}
+
+.tab-link:hover {
+   border-bottom: 3px solid #16A0F5;
+   padding-bottom: 10px;
 }
 
 .graph-container {
@@ -443,8 +413,8 @@ hr {
   border-radius: 100px;
   background-image: url('assets/up-arrow.svg');
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
-  background-position: 50%;
+  background-color: #FFF;
+  background-position: 5px;
   background-size: 20px;
 }
 
@@ -453,6 +423,7 @@ hr {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: 20px;
 
 }
 
@@ -478,20 +449,20 @@ hr {
   width: 175px;
   display: inline-block;
   margin: 10px;
-  border: 10px solid grey;
+  border: 10px solid #DBE5E9;
   border-radius: 100%;
   text-align: center;
 }
 .circle-graph-one {
-  border-color: #4EB8BF #4EB8BF #4EB8BF #D9E3E9;
+  border-color: #4EB8BF #4EB8BF #4EB8BF #D9E5E9;
   border-width: 10px;
 }
 .circle-graph-two {
-  border-color: #D9E3E9 #D9E3E9 #16A0F5 #19A0F5;
+  border-color: #D9E5E9 #D9E5E9 #16A0F5 #19A0F5;
   border-width: 10px;
 }
 .circle-graph-three {
-  border-color: #D9E3E9 #D9E3E9 #B364B2 #D9E3E9;
+  border-color: #D9E5E9  #D9E5E9  #D9E5E9 #B364B2;
   border-width: 10px;
 }
 
@@ -505,7 +476,7 @@ hr {
 .circle-graph-text {
   margin: 0 10px 40px;
   padding: 0 20px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .bottom-container {
@@ -519,21 +490,24 @@ hr {
 
 table {
   padding: 25px;
-  border-collapse: collapse;
+  margin-left: 15px;
   background-color: #fff;
+  border-collapse: collapse;
 }
 
 
 thead {
   background-color: #6F7E95;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
-.row1 {
+.row1,
+.row {
   min-width: 200px;
-font-weight: 500;
-border: none;
-
+  font-weight: 500;
+}
+.row1 {
+  border: none;
 }
 
 td {
@@ -543,22 +517,23 @@ td {
 
 tr {
   width: 90%;
- display: flex;
- margin: 0 auto;
- border-bottom: 1px solid #D9E3E9;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid #D9E5E9;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.row {
-  min-width: 200px;
- font-weight: 500;
-}
-
+/*RIGHT CONTAINER*/
 .right-bottom-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 25px;
+  margin-right: 20px;
+
 }
 
 .social-media-links {
@@ -566,19 +541,20 @@ tr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .sm-links {
   text-decoration: none;
-  width: 200%;
+  width: 380px;
   padding: 20px;
-  background-position-x: 10%;
-  background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: 25px;
-  color: #FFFFFF;
+  color: #FFF;
   text-align: center;
   text-decoration: none;
+  background-position-x: 8%;
+  background-position-y: 50%;
 }
 #facebook {
   background-color: #4B6EC1;
@@ -595,18 +571,54 @@ tr {
   background-image: url('assets/linkedin-logo.svg')
 }
 
-.job-link-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.job-links,
+.widget-container {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #D9E3E9;
 }
+
+.resume-container {
+  padding: 20px 0px 20px 0px;
+}
+
+#globe-img,
+#widget-img,
+#send-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.job-link-container,
 .input-container {
   display: flex;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+.job-link-container {
+  flex-direction: column;
+}
+.input-container {
+  flex-direction: row;
+}
+
+.input-bar {
+  height: 50px;
+  width: 280px;
+}
+
+#resume-email-input {
+  width: 380px;
+}
+
+#copy-button {
+  height: 50px;
+  width: 100px;
+  border-radius: 3%;
+  border-style: none;
+  background-color: #42BBBD;
+  color: #FFFFFF;
+  font-size: 16px;
 }
 
 
