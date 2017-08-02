@@ -4,10 +4,10 @@
 <head>
   <title>Static Comp Challenge 3</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -16,7 +16,9 @@
     <nav class="aside">
       <div class="top-aside">
         <img class="profile-pic">
-        <p class="profile-name">Leslie Knope</p>
+        <div class='arrow'>
+        <p class="profile-name">Leslie Knope</p><img class='down-arrow' src='assets/angle-arrow-down.svg' width=15px height=15px>
+      </div>
       </div>
       <ul class="aside-main">
         <h2 class="aside-main-title">Main</h2>
@@ -41,6 +43,8 @@
         <li><a class="aside-link" id="executive">Executive</a></li>
         <li><a class="aside-link" id="human-resources">Human&nbsp; Resources</a></li>
       </ul>
+
+
     </nav>
   </aside>
 
@@ -52,8 +56,8 @@
           <button class="search-bar-icon left-search-btn" id="menu"></button>
         </div>
         <div class="search-bar-container">
-          <input class="search-bar" id="long-search-bar" role="search" />
-          <!-- <input class="search-bar" id="short-search-bar" role="search" /> -->
+          <input class="search-bar" id="first-search-bar" role="search" placeholder="    Search for a job, task, or resume" />
+          <input class="search-bar" id="second-search-bar" role="search" placeholder="    Search" />
         </div>
         <div class="right-search-icons">
           <button class="search-bar-icon" id="user" type="button"></button>
@@ -74,13 +78,14 @@
         </div>
       </article>
       <nav class="lower-header-tabs">
-        <a class="tab-link" href="#">SUMMARY</a>
-        <a class="tab-link" href="#">APPLICANTS</a>
-        <a class="tab-link" href="#">JOB BOARD</a>
-        <a class="tab-link" href="#">INTERVIEWS</a>
-        <a class="tab-link" href="#">ACTIVITY</a>
-        <a class="tab-link" href="#">BROADCAST</a>
-        <a class="tab-link" href="#">NOTIFICATIONS</a>
+        <a class="tab-link" id="summary" href="#">SUMMARY</a>
+        <a class="tab-link" id="applicants" href="#">APPLICANTS</a>
+        <a class="tab-link" id="job-board" href="#">JOB BOARD</a>
+        <a class="tab-link" id="interviews" href="#">INTERVIEWS</a>
+        <a class="tab-link" id="activity" href="#">ACTIVITY</a>
+        <a class="tab-link" id="broadcast" href="#">BROADCAST</a>
+        <a class="tab-link" id="notifications" href="#">NOTIFICATIONS</a>
+        <a class="tab-link" id="more" href="#">MORE...</a>
       </nav>
     </header>
 
@@ -88,6 +93,7 @@
     <main role="main">
       <section class="graph-container">
         <div class="circle-graph-container">
+         <div class="circles">
           <div class="circle-graph-one">
             <p class="circle-graph-number">3,154</p>
             <p class="circle-graph-text">APPLICANTS</p>
@@ -100,6 +106,7 @@
             <p class="circle-graph-number">912</p>
             <p class="circle-graph-text">FORWARDS</p>
           </div>
+         </div>
           <button class="circle-graph-button">TOTALS - out of 5,231 views</button>
         </div>
         <div class="bar-graph-container">
@@ -110,7 +117,7 @@
 <!--HORIZONTAL ROWS-->
       <div class="horizontal-row">
         <hr id="hr-one">
-        <button class="collapse-button" id="collapse" type="button"></button>
+        <button class="minimize-button" id="minimize" type="button"></button>
         <hr id="hr-two">
       </div>
 <!-- TABLE -->
@@ -153,7 +160,7 @@ in the development and management of departmental tasks and programs. </td>
               </tr>
               <tr>
                 <td class="row">HIRING LEAD</td>
-                <td><img class="table-pic"><span class="ron">Ron Swanson</span></td>
+                <td id="ron-swanson"><img class="table-pic"><span class="ron">Ron Swanson</span></td>
               </tr>
               <tr class="last-row">
                 <td class="row">APPROVED SALARY</td>
@@ -170,24 +177,24 @@ in the development and management of departmental tasks and programs. </td>
             <a class="sm-links" id="linkedin" href="#">Post to LinkedIn</a>
           </div>
           <div class="job-link-container">
-            <article class="job-links">
-              <h2><img id="globe-img" src="assets/earth.svg" alt="">Link to this Job</h2>
+            <article class="article-input job-links">
+              <h2 class="link-icons-bottom"><img id="globe-img" src="assets/earth.svg" alt="">Link to this Job</h2>
               <p class="job-link-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               <div class="input-container">
-                <input class="input-bar">
+                <input class="input-bar" placeholder="  https://www.nbc.com/parks-and-recreation">
                 <button id="copy-button">Copy</button>
               </div>
             </article>
-            <article class="widget-container">
-              <h2><img id="widget-img"  src="assets/settings-button.svg" alt="">Use the Button Widget</h2>
+            <article class="article-input widget-container">
+              <h2 class="link-icons-bottom"><img id="widget-img"  src="assets/settings-button.svg" alt="">Use the Button Widget</h2>
               <p class="job-link-text">The widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
               <div class="input-container">
-                <input class="input-bar">
+                <input class="input-bar" placeholder="   <script type=text/javascript.scrklahdggh">
                 <button id="copy-button">Copy</button>
               </div>
             </article>
-              <article class="resume-container">
-                <h2><img id="send-img" src="assets/sent-mail.svg" alt="">Upload Resumes by Email</h2>
+              <article class="article-input resume-container">
+                <h2 class="link-icons-bottom"><img id="send-img" src="assets/sent-mail.svg" alt="">Upload Resumes by Email</h2>
                 <p class="resume-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
                 <input class="input-bar" id="resume-email-input" placeholder="   francy.lang@gmail.com">
               </article>
