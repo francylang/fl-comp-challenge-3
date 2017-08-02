@@ -42,7 +42,7 @@ body {
 }
 
 .profile-pic {
-  background-image: url('assets/leslie.jpg');
+  background-image: url('assets/Leslie.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 100%;
@@ -67,6 +67,7 @@ body {
 }
 
 .down-arrow:hover {
+  background-image: url('assets/angle-arrow-down (1).svg')
 }
 
 .arrow {
